@@ -36,3 +36,7 @@ Route::get('/auth/callback', function () {
 
     // $user->token
 });
+
+// uploader
+
+Route::resource('upload', App\Http\Controllers\UploadController::class)->name('index', 'upload');
